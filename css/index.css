@@ -6,34 +6,55 @@ body {
   background: #222831;
   font-family: "Ubuntu", Arial, sans-serif;
   font-size: 18px;
+  background: #2980b9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ffffff, #6dd5fa, #2980b9);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ffffff, #6dd5fa, #2980b9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
 }
 
+header .logo-deaf {
+  display: inline;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+header .logo-deaf .logo {
+  width: 50px;
+  height: 50px;
+}
 header .social-network {
-  width: 125px;
+  width: 160px;
   height: 40px;
   float: right;
   margin: 10px 10px;
   text-align: center;
 }
+header .social-network .link {
+  text-decoration: none;
+}
 header .social-network .icon {
-  width: 24%;
+  width: 18%;
   height: 100%;
   color: #ffffff;
   padding-left: 5px;
 }
 header .social-network .icon:hover {
-  color: #40bfc1;
+  color: #000000;
   transition: color 0.35s ease;
 }
 
 .perfil {
-  transform: translate(30rem, 5rem);
-  width: 24%;
+  transform: translate(29rem, 2rem);
+  width: 27%;
   text-align: center;
 }
 .perfil .title {
+  color: #000000;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 32px;
   margin: 10px;
 }
 .perfil article {
@@ -42,15 +63,16 @@ header .social-network .icon:hover {
 }
 .perfil article span {
   display: inline-block;
+  font-size: 20px;
   padding: 2px;
 }
-.perfil article .junior {
+.perfil article .front {
   display: inline;
-  color: #40bfc1;
+  color: #ffffff;
   font-weight: 700;
   opacity: 1;
 }
-.perfil article .junior:hover {
+.perfil article .front:hover {
   color: #000000;
   transition: color 0.25s ease;
 }
@@ -64,6 +86,35 @@ header .social-network .icon:hover {
   transition: color 0.25s ease;
 }
 
+.skills {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  top: 14%;
+}
+.skills h2 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  width: 18%;
+  position: relative;
+  left: 33%;
+}
+.skills .div {
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+}
+.skills .languages {
+  margin-bottom: 10px;
+}
+.skills .logo {
+  width: 60px;
+  height: 60px;
+  padding: 5px 10px;
+}
+
 footer {
   width: 100%;
   height: 10vh;
@@ -73,34 +124,19 @@ footer {
 footer .hr {
   padding: 15px 0;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 footer span {
-  color: #ffffff;
+  color: #000000;
+  font-size: 16px;
   font-weight: 500;
-  opacity: 1;
+  position: relative;
+  top: 10px;
+  left: 10px;
 }
 footer span:hover {
   color: #40bfc1;
   transition: color 0.25s ease;
-}
-
-.skills {
-  border: 1px solid red;
-  margin: 7rem;
-}
-.skills ul {
-  list-style: none;
-  display: flex;
-}
-.skills .item {
-  display: flex;
-  justify-content: center;
-}
-.skills .logo {
-  width: 8%;
-  height: 100%;
-  border: 1px solid red;
 }
 
 /*# sourceMappingURL=index.css.map */
