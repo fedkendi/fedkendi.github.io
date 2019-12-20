@@ -1,0 +1,113 @@
+$color-black: #000000;
+$color-white: #ffffff;
+
+$color-blue-light: #40bfc1;
+
+$font-family: "Ubuntu", Arial, sans-serif;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #222831;
+  font-family: $font-family;
+  font-size: 18px;
+}
+
+header {
+  .social-network {
+    width: 125px;
+    height: 40px;
+    float: right;
+    margin: 10px 10px;
+    text-align: center;
+    .icon {
+      width: 24%;
+      height: 100%;
+      color: $color-white;
+      padding-left: 5px;
+    }
+    .icon:hover {
+      color: $color-blue-light;
+      transition: color 0.35s ease;
+    }
+  }
+}
+
+.perfil {
+  transform: translate(30rem, 5rem);
+  width: 24%;
+  text-align: center;
+  .title {
+    font-weight: 700;
+    font-size: 28px;
+    margin: 10px;
+  }
+  article {
+    color: $color-white;
+    font-weight: 400;
+    span {
+      display: inline-block;
+      padding: 2px;
+    }
+    .junior {
+      display: inline;
+      color: $color-blue-light;
+      font-weight: 700;
+      opacity: 1;
+    }
+    .junior:hover {
+      color: $color-black;
+      transition: color 0.25s ease;
+    }
+    .techsign {
+      color: $color-white;
+      font-weight: 700;
+      opacity: 1;
+    }
+    .techsign:hover {
+      color: $color-black;
+      transition: color 0.25s ease;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+  .hr {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+  }
+  span {
+    color: $color-white;
+    font-weight: 500;
+    opacity: 1;
+  }
+  span:hover {
+    color: $color-blue-light;
+    transition: color 0.25s ease;
+  }
+}
+
+.skills {
+  border: 1px solid red;
+  margin: 7rem;
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  .item {
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    width: 8%;
+    height: 100%;
+    border: 1px solid red;
+  }
+}
