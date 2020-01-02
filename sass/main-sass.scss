@@ -10,9 +10,11 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #222831;
   font-family: $font-family;
   font-size: 18px;
+}
+
+body {
   background: #2980b9; /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #ffffff, #6dd5fa, #2980b9); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
@@ -104,12 +106,10 @@ header {
   position: relative;
   top: 14%;
   h2 {
-    color: $color-black;
+    color: #000000;
     font-size: 20px;
     font-weight: 500;
-    width: 18%;
-    position: relative;
-    left: 33%;
+    text-align: center;
   }
   .div {
     display: flex;
@@ -148,4 +148,82 @@ footer {
     color: $color-blue-light;
     transition: color 0.25s ease;
   }
+}
+
+@media (max-width: 576px) { 
+  body{
+    height: 152vh;
+  }
+
+
+}
+
+@media screen and (min-width: 567px) and (max-width: 768px) {
+  body {
+    height: 152vh;
+    width: 100%;
+  }
+
+  .social-network {
+    .link {
+      position: relative;
+      left: 5px;
+    }
+  }
+
+  .perfil {
+    width: 100%;
+    transform: translate(0, 4rem);
+    .title {
+      width: 120%;
+      position: relative;
+      right: 55px;
+      font-size: 28px;
+    }
+  }
+
+  .skills {
+    width: 100%;
+    h2 {
+      width: 100%;
+      position: relative;
+      left: 0;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .languages {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      .logo {
+        width: 60px;
+        height: 60px;
+        padding: 10px 10px;
+      }
+    }
+  }
+
+  footer {
+    position: relative;
+    top: 244px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  body {
+    height: 111vh;
+  }
+
+  .perfil {
+    transform: translate(20rem, 2rem);
+    .title {
+      width: 120%;
+      position: relative;
+      right: 55px;
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1199px) {
 }

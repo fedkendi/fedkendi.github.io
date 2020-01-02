@@ -3,9 +3,11 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #222831;
   font-family: "Ubuntu", Arial, sans-serif;
   font-size: 18px;
+}
+
+body {
   background: #2980b9;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #ffffff, #6dd5fa, #2980b9);
@@ -97,9 +99,7 @@ header .social-network .icon:hover {
   color: #000000;
   font-size: 20px;
   font-weight: 500;
-  width: 18%;
-  position: relative;
-  left: 33%;
+  text-align: center;
 }
 .skills .div {
   display: flex;
@@ -137,6 +137,75 @@ footer span {
 footer span:hover {
   color: #40bfc1;
   transition: color 0.25s ease;
+}
+
+@media (max-width: 576px) {
+  body {
+    height: 152vh;
+  }
+}
+@media screen and (min-width: 567px) and (max-width: 768px) {
+  body {
+    height: 152vh;
+    width: 100%;
+  }
+
+  .social-network .link {
+    position: relative;
+    left: 5px;
+  }
+
+  .perfil {
+    width: 100%;
+    transform: translate(0, 4rem);
+  }
+  .perfil .title {
+    width: 120%;
+    position: relative;
+    right: 55px;
+    font-size: 28px;
+  }
+
+  .skills {
+    width: 100%;
+  }
+  .skills h2 {
+    width: 100%;
+    position: relative;
+    left: 0;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .skills .languages {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .skills .languages .logo {
+    width: 60px;
+    height: 60px;
+    padding: 10px 10px;
+  }
+
+  footer {
+    position: relative;
+    top: 244px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  body {
+    height: 111vh;
+  }
+
+  .perfil {
+    transform: translate(20rem, 2rem);
+  }
+  .perfil .title {
+    width: 120%;
+    position: relative;
+    right: 55px;
+    font-size: 28px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
