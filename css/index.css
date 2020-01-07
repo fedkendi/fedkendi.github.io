@@ -136,7 +136,7 @@ footer span:hover {
 
 @media screen and (max-width: 768px) {
   body {
-    height: 123vh;
+    height: 120vh;
   }
 
   .perfil {
@@ -162,7 +162,7 @@ footer span:hover {
   footer {
     width: 100%;
     position: relative;
-    top: 9rem;
+    top: 25px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
