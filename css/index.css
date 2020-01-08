@@ -134,7 +134,11 @@ footer span:hover {
   transition: color 0.25s ease;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 575.98px) {
+  body {
+    height: 100vh;
+  }
+
   .col-sm {
     margin-top: 4rem;
   }
@@ -142,17 +146,17 @@ footer span:hover {
     width: 100%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
   .profissional {
     width: 60%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   .profissional {
     width: 40%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .profissional {
     width: 40%;
   }
